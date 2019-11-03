@@ -75,6 +75,7 @@ Keyboard.fireOnHiding = function() {
     // See CB-6444 for context.
     if (Keyboard.automaticScrollToTopOnHiding) {
         document.body.scrollLeft = 0;
+	window.scrollTo(0,0);
     }
 
     cordova.fireWindowEvent('keyboardWillHide');
